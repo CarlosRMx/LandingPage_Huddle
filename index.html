@@ -22,15 +22,34 @@
         background-image: url(./images/bg-desktop.svg);
         background-color:#6F03BF;
       }
-      .logo{
-        width: 100px;
-        margin-top: 20px 0 0 20px;
+      .logo-container{
+        margin: 32px 0 0 32px;
+      }
+      .img-logo{
+        width: 150px;
+      }
+      .main-container{
+        display: flex;
       }
     </style>
   </head>
   <body>
-    <div class="logo">
-      <img src="./images/logo.svg" alt="logo">
+    <div class="logo-container">
+      <img class="img-logo" src="./images/logo.svg" alt="logo">
+    </div>
+
+    <div class="main-container">
+      <div class="view-app">
+        <img src="./images/illustration-mockups.svg" alt="app">
+      </div>
+      <form action="">
+        <h1 class="tittle">Build The Community Your Fans Will Love</h1>
+        <p class="subtittle"> Huddle re-images the way we buil communities. You
+          have a voice, but so does your audience. Create connections with your users 
+          as you engage in genuine descussion.
+        </p>
+        <input class="principal-button"type="submit" value="Register">
+      </form>
     </div>
   </body>
 </html>
