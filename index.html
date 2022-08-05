@@ -11,6 +11,9 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
     <title>
       Frontend Mentor | Huddle landing page with single introductory section
@@ -20,7 +23,8 @@
     <style>
       body{
         background-image: url(./images/bg-desktop.svg);
-        background-color:#6F03BF;
+        background-color:hsl(257, 40%, 49%);
+        font-family: 'Poppins', sans-serif;
       }
       .logo-container{
         margin: 32px 0 0 32px;
@@ -30,7 +34,34 @@
       }
       .main-container{
         display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 56px;
       }
+      .view-app img{
+        width: 648px;
+      }
+      .form{
+        width: 428px;
+        height: 200px
+      }
+      .tittle{
+        color: white;
+      }
+      .subtittle{
+        color: white;
+      }
+      .principal-button{
+        border: none;
+        border-radius: 24px;
+        background-color: white;
+        color: hsl(257, 40%, 49%);
+        text-align: center;
+        height: 50px;
+        width: 184px;
+      }
+
     </style>
   </head>
   <body>
@@ -42,7 +73,7 @@
       <div class="view-app">
         <img src="./images/illustration-mockups.svg" alt="app">
       </div>
-      <form action="">
+      <form action="" class="form">
         <h1 class="tittle">Build The Community Your Fans Will Love</h1>
         <p class="subtittle"> Huddle re-images the way we buil communities. You
           have a voice, but so does your audience. Create connections with your users 
@@ -50,6 +81,11 @@
         </p>
         <input class="principal-button"type="submit" value="Register">
       </form>
+      <footer class="footer">
+        <div class="info-footer">
+          <img src="./images/favicon-32x32.png" alt="logo">
+        </div>
+      </footer>
     </div>
   </body>
 </html>
