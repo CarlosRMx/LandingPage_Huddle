@@ -37,10 +37,16 @@
         height: 100%;
         align-items: center;
         justify-content: center;
-        gap: 56px;
+        gap: 48px;
+      }
+      .main-container form{
+        position: relative;
+        margin-bottom: 92px;
       }
       .view-app img{
-        width: 648px;
+        display: grid;
+        margin-top: 74px;
+        width: 552px;
       }
       .form{
         width: 428px;
@@ -60,6 +66,15 @@
         text-align: center;
         height: 50px;
         width: 184px;
+      }
+      .footer{
+        position: absolute;
+        bottom: 42px;
+        right: 0;
+      }
+      .info-footer figure{
+        display: flex;
+        gap: 14px;
       }
       
     </style>
@@ -85,9 +100,11 @@
 
     <footer class="footer">
       <div class="info-footer">
-        <i class="fa-brands fa-facebook fa-2xl"></i>
-        <i class="fa-brands fa-twitter fa-2xl"></i>
-        <i class="fa-brands fa-instagram fa-2xl"></i>
+        <figure style="font-size: 1em; color: white;">
+          <i class="fa-brands fa-facebook fa-2xl"></i>
+          <i class="fa-brands fa-twitter fa-2xl"></i>
+          <i class="fa-brands fa-instagram fa-2xl"></i>
+        </figure>
       </div>
     </footer>
   </body>
