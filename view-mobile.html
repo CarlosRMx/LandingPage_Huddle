@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <script src="https://kit.fontawesome.com/e2a7d0a03e.js" crossorigin="anonymous"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>
+      Frontend Mentor | Huddle landing page with single introductory section
+    </title>
+
+    <!-- No dude en eliminar estos estilos o personalizarlos en su propia hoja de estilo 👍 -->
+    <style>
+      body{
+        background-image: url(./images/bg-desktop.svg);
+        background-color:hsl(257, 40%, 49%);
+        font-family: 'Poppins', sans-serif;
+      }
+      .main-container{
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        padding: 0 24px 0 24px;
+        place-content: center;
+        gap: 16px;
+      }
+      .header figure img{
+        width: 142px;
+      } 
+      .mockUp figure img{
+        width: 348px;
+      }
+      .info{
+        display: flex;
+        justify-content: center;
+        
+      }
+      .form{
+        width: 322px;
+        height: 148px;
+      }
+      .tittle{
+        color: white;
+        text-align: center;
+        font-size: 22px;
+      }
+      .subtittle{
+        color: white;
+        text-align: center;
+        font-size: 18px;
+      }
+      .principal-button{
+        border: none;
+        border-radius: 18px;
+        background-color: white;
+        color: hsl(257, 40%, 49%);
+        text-align: center;
+        height: 38px;
+        width: 232px;
+      }
+      .button{
+        display: flex;
+        justify-content: center;
+      }
+      .footer-container{
+        position: absolute;
+        bottom: 0;
+      }
+      .footer{
+        display: flex;
+        justify-content: center;
+      }
+      .info-footer figure{
+        display: flex;
+        justify-content: center;
+        gap: 14px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <section class="main-container">
+        <section class="header">
+            <figure>
+                <img src="./images/logo.svg" alt="logo-empresa">
+            </figure>
+        </section>
+        <section class="mockUp">
+            <figure>
+                <img src="./images/illustration-mockups.svg" alt="mock-up-empresa">
+            </figure>
+        </section>
+        <section class="info">
+            <form action="" class="form">
+                <h1 class="tittle">Build The Community Your Fans Will Love</h1>
+                <p class="subtittle"> Huddle re-images the way we buil communities. You
+                  have a voice, but so does your audience. Create connections with your users 
+                  as you engage in genuine descussion.
+                </p>
+                <div class="button">
+                    <input class="principal-button"type="submit" value="Register">
+                </div>
+              </form>
+              
+        </section>
+    </section>
+    <div class="footer-container">
+
+        <footer class="footer">
+            <div class="info-footer">
+              <figure style="font-size: 1em; color: white;">
+                <i class="fa-brands fa-facebook fa-2xl"></i>
+                <i class="fa-brands fa-twitter fa-2xl"></i>
+                <i class="fa-brands fa-instagram fa-2xl"></i>
+              </figure>
+            </div>
+          </footer>
+    </div>
+
+   
+  </body>
+</html>
