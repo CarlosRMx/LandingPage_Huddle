@@ -71,18 +71,20 @@
         display: flex;
         justify-content: center;
       }
-      .footer-container{
-        position: absolute;
-        bottom: 0;
-      }
       .footer{
-        display: flex;
-        justify-content: center;
+        display: grid;
+        grid-template-rows: 1fr auto;
+        /* border: solid 1px red; */
+        place-content: center;
+        gap: 250px;
       }
-      .info-footer figure{
+      .footer__info{
+        margin-top: 250px;
+      }
+      .footer__info figure{
         display: flex;
         justify-content: center;
-        gap: 14px;
+        gap: 18px;
       }
 
     </style>
@@ -112,19 +114,17 @@
               </form>
               
         </section>
-    </section>
-    <div class="footer-container">
-
         <footer class="footer">
-            <div class="info-footer">
+          <div class="footer__info">
               <figure style="font-size: 1em; color: white;">
-                <i class="fa-brands fa-facebook fa-2xl"></i>
-                <i class="fa-brands fa-twitter fa-2xl"></i>
-                <i class="fa-brands fa-instagram fa-2xl"></i>
+                  <i class="fa-brands fa-facebook fa-2xl"></i>
+                  <i class="fa-brands fa-twitter fa-2xl"></i>
+                  <i class="fa-brands fa-instagram fa-2xl"></i>
               </figure>
-            </div>
-          </footer>
-    </div>
+          </div>
+        </footer>
+    </section>
+
 
    
   </body>
